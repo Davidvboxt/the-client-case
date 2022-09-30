@@ -231,6 +231,10 @@ li > p{
     margin-left: 0;
 }
 
+.page-body > h2{
+    color: #DC143C;
+}
+
 .page-body > p{
     margin-top: 8px;
     margin-bottom: 8px;
