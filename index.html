@@ -14,8 +14,15 @@
 </head>
 
 <body>
-    <div class="header">
+    <header>
         <h1 class="titel">OBA</h1>
+        <div>
+            <a href="#" class="header-link">Help</a>
+            <span>|</span>
+            <a href="#" class="header-link">Log in</a>
+        </div>
+    </header>
+    <div class="sub-header">
         <h4>Bibliotheken locatie's</h4>
         <p>Voer je locatie (bijvoorbeeld: postcode, adres, stad...) in en we tonen de dichtsbijzijnde bibliotheken.</p>
         <div class="header-bottom">
@@ -25,9 +32,25 @@
                 <label class="label" for="javascript">Momenteel open</label><br><br>
                 <input type="submit" value="Zoeken" class="btn-red">
             </div>
-            <a href="#" id="button" class="info-icon">
+            <div class="tooltip">               
                 <i class="fa-solid fa-circle-info"></i>
-            </a>
+                <span class="tooltiptext">
+                    <ul>
+                        <li>
+                            <span class="color-blauw">Blauw</span> = VU
+                        </li>
+                        <li>
+                            <span class="color-rood">Rood</span> = HvA
+                        </li>
+                        <li> 
+                            <span class="color-paars">Paars</span> = UvA
+                        </li>
+                        <li>
+                            <span class="color-geel">Geel</span> = OBA
+                        </li>
+                    </ul>
+                </span>
+            </div>
         </div>
     </div>
     <div class="locatie">
@@ -75,6 +98,20 @@
                             1068EL Amsterdam</p>
                     </a>
                 </li>
+                <li>
+                    <a href="page-1.html" class="locatie-card">
+                        <h3>OBA Slotermeer</h3>
+                        <p>Slotermeerlaan 103 E
+                            1063JN Amsterdam</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-1.html" class="locatie-card">
+                        <h3>OBA Bijlmerplein</h3>
+                        <p>Bijlmerplein 393
+                            1102D Amsterdam</p>
+                    </a>
+                </li>
             </ul>
         </div>
         <div class="locatie-map">
@@ -82,19 +119,6 @@
                     marginwidth="0"
                     src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Malet%20St,%20London%20WC1E%207HU,%20United%20Kingdom+(Your%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
                         href="https://www.gps.ie/sport-gps/">hiking gps</a></iframe></div>
-        </div>
-    </div>
-
-    <!-- Modal Section -->
-
-    <div class="bg-modal">
-        <div class="modal-contents">
-
-            <div class="close">+</div>
-            <img src="https://richardmiddleton.me/comic-100.png" alt="">
-
-            <h2>Info</h2>
-
         </div>
     </div>
 

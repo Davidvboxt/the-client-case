@@ -14,6 +14,7 @@ body{
     text-transform: uppercase;
     border: none;
     font-weight: bold;
+    cursor: pointer;
 }
 
 @media (max-width: 820px) {
@@ -24,20 +25,57 @@ body{
     }
 }
 
+/* COLOR */
+.color-blauw{
+    color: 	#1e90ff;
+}
+
+.color-rood{
+    color: red;
+}
+
+.color-geel{
+    color: 	#ffd700;
+}
+
+.color-paars{
+    color: purple;
+}
+
 /* HEADER */
-.header{
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header > ul {
+    list-style: none;
+    float: right;
+}
+
+.header-link{
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.header-link:hover {
+    text-decoration: underline;
+  }
+
+/* SUB-HEADER */
+.sub-header{
     padding-bottom: 30px;
 }
 
-.header > h1{
+.titel{
     font-size: 97px;
     color: #DC143C;
     margin: 0;
 }
 
-.header > p{
+.sub-header > p{
     margin-bottom: 40px;
-    text-transform: uppercase;
     font-size: 12px;
 }
 
@@ -71,13 +109,9 @@ body{
     width: 30%;
 }
 
-.header > h4{
+.sub-header > h4{
     margin-bottom: 0;
     text-transform: uppercase;
-}
-
-.header-bottom{
-
 }
 
 .search{
@@ -90,17 +124,6 @@ body{
     border-bottom: 1px solid black;
     padding-bottom: 2px;
     margin-right: 10px;
-}
-
-.info-icon{
-    display: flex;
-    padding: 0px 20px 0px 30px;
-    align-items: center;
-    width: 100%;
-    float: right;
-    justify-content: flex-end;
-    color: black;
-    text-decoration: none;
 }
 
 /* LOCATIE */
@@ -118,6 +141,7 @@ body{
 .locatie-map{
     width: 65%;
     padding: 15px;
+    padding: 15px 0px 15px 15px;
 }
 
 @media (max-width: 820px) {
@@ -130,11 +154,17 @@ body{
 /* LOCATIE-LIJST */
 .locatie-lijst{
     width: 35%;
+    height: 648px;
+    margin-bottom: 20px;
+    overflow: auto;
 }
 
 @media (max-width: 820px) {
     .locatie-lijst {
       width: 100%;
+      width: 100%;
+      height: 327px;
+      margin-bottom: 43px;
     }
 }
 
@@ -152,12 +182,12 @@ body{
     margin: 5px 0px 0px 0px;
 }
 
-ul{
+.locatie-lijst > ul{
     list-style: none;
     padding: 0;
 }
 
-li{
+.locatie-lijst > ul > li{
     margin: 0 0 10px 0;
     padding: 10px;
     border: 1px solid black;
@@ -173,38 +203,6 @@ li > p{
     margin: 5px 0px 0px 0px;
 }
 
-/* MODAL STARTS HERE  */
-.bg-modal {
-	background-color: rgba(0, 0, 0, 0.8);
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	display: none;
-	justify-content: center;
-	align-items: center;
-}
-
-.modal-contents {
-	height: 300px;
-	width: 500px;
-	background-color: white;
-	text-align: center;
-	padding: 20px;
-	position: relative;
-	border-radius: 4px;
-}
-
-.close {
-	position: absolute;
-	top: 0;
-	right: 10px;
-	font-size: 42px;
-	color: #333;
-	transform: rotate(45deg);
-	cursor: pointer;
-}
-
 /* PAGE PAGINA */
 .btn-terug{
     text-decoration: none;
@@ -214,6 +212,7 @@ li > p{
     color: black;
     margin: 20px;
     border-bottom: 2px solid black;
+    cursor: pointer;
 }
 
 .image{
@@ -238,4 +237,45 @@ li > p{
 .page-body > p{
     margin-top: 8px;
     margin-bottom: 8px;
+}
+
+/* INFO HOVER */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    padding: 0px 20px 0px 30px;
+    align-items: center;
+    width: 100%;
+    float: right;
+    justify-content: flex-end;
+    color: black;
+    text-decoration: none;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    margin-right: 30px;
+    background-color: white;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip .tooltiptext > ul{
+    padding: 0px;
+    list-style: none;
+}
+.tooltip .tooltiptext > ul > li{
+    margin-bottom: 5px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
