@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link href="styles/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="btn-terug">Terug</a>
+        <div>
+            <a href="#" class="header-link">Help</a>
+            <span>|</span>
+            <a href="index.html" class="header-link">Mijn account</a>
+        </div>
+    </header>
+    <div class="sub-header sub-header-activiteiten">
+        <h2>Gerelateerde activiteiten</h2>
+        <p>Hier vind u de gerelateerde activiteiten die bijhoort tot de geselecteerde boek.</p>
+    </div>
+
+    <section class="filter">
+        <div id="filters" class="button-group">
+            <button class="btn-filter" data-filter="*">Alles</button>
+            <button class="btn-filter" data-filter=".low">Meet & greetings</button>
+            <button class="btn-filter" data-filter=".new">Boekenpraat</button>
+        </div>
+    </section>
+
+    <section class="blokken">
+        <div class="block_producten">
+            <div class="row posts block_items">
+                <div id="1" class="block_item item low col-md-4 poep">
+                    <a href="single-product.php">
+                        <img class="block_img" src="assets/images/lezing-2.png" alt="">
+                        <div class="block_excerpt">
+                            <h4>Meet and greet</h4>
+                            <p>Datum: 30 november 2022</p>
+                            <a href="#" class="btn-act">Lees meer</a>
+                        </div>
+                    </a>
+                </div>
+                <div id="1" class="block_item item new col-md-4 poep">
+                    <a href="single-product.php">
+                        <img class="block_img" src="assets/images/lezing-1.jpg" alt="">
+                        <div class="block_excerpt">
+                            <h4>Boekenpraat</h4>
+                            <p>Datum: 30 november 2022</p>
+                            <a href="#" class="btn-act">Lees meer</a>
+                        </div>
+                    </a>
+                </div>
+                <div id="1" class="block_item item col-md-4 poep">
+                    <a href="single-product.php">
+                        <img class="block_img" src="assets/images/lezing-3.jpg" alt="">
+                        <div class="block_excerpt">
+                            <h4>Theater</h4>
+                            <p>Datum: 30 november 2022</p>
+                            <a href="#" class="btn-act">Lees meer</a>
+                        </div>
+                    </a>
+                </div>
+                <div id="1" class="block_item item col-md-4">
+                    <a href="single-product.php">
+                        <img class="block_img" src="assets/images/lezing-4.webp" alt="">
+                        <div class="block_excerpt">
+                            <h4>Boeken quiz</h4>
+                            <p>Datum: 30 november 2022</p>
+                            <a href="#" class="btn-act">Lees meer</a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+
+<!-- Additional Scripts -->
+<script type="text/javascript" src="scripts/index.js"></script>
+<script type="text/javascript" src="scripts/isotope.js"></script>
+<script type="text/javascript" src="scripts/owl.js"></script>

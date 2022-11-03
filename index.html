@@ -10,6 +10,7 @@
     <link href="styles/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 
@@ -19,111 +20,110 @@
         <div>
             <a href="#" class="header-link">Help</a>
             <span>|</span>
-            <a href="#" class="header-link">Log in</a>
+            <a href="index.html" class="header-link">Mijn account</a>
         </div>
     </header>
     <div class="sub-header">
-        <h4>Bibliotheken locatie's</h4>
-        <p>Voer je locatie (bijvoorbeeld: postcode, adres, stad...) in en we tonen de dichtsbijzijnde bibliotheken.</p>
+        <h2>Account</h2>
+        <p>In mijn account kunt u uw persoonlijke reserveringen, profiel en instellingen vinden.</p>
         <div class="header-bottom">
-            <div class="search">
-                <input class="input-text" type="text" id="javascript" name="fav_language" value="Zoeken...">
-                <input class="input-checkbox" type="radio" id="javascript" name="fav_language" value="JavaScript">
-                <label class="label" for="javascript">Momenteel open</label><br><br>
-                <input type="submit" value="Zoeken" class="btn-red">
-            </div>
-            <div class="tooltip">               
-                <i class="fa-solid fa-circle-info"></i>
-                <span class="tooltiptext">
-                    <ul>
-                        <li>
-                            <span class="color-blauw">Blauw</span> = VU
-                        </li>
-                        <li>
-                            <span class="color-rood">Rood</span> = HvA
-                        </li>
-                        <li> 
-                            <span class="color-paars">Paars</span> = UvA
-                        </li>
-                        <li>
-                            <span class="color-geel">Geel</span> = OBA
-                        </li>
-                    </ul>
-                </span>
-            </div>
-        </div>
-    </div>
-    <div class="locatie">
-        <div class="locatie-lijst">
             <ul>
                 <li>
-                    <a href="page-1.html" class="locatie-card">
-                        <h3>OBA Oosterdok</h3>
-                        <p>Oosterdokskade 143
-                            1011DL Amsterdam</p>
-                    </a>
+                    <a href="#" class="active">Mijn reserveringen</a>
                 </li>
                 <li>
-                    <a href="page-1.html" class="locatie-card">
-                        <h3>OBA Diemen</h3>
-                        <p>Wilhelminaplantsoen 126
-                            1111CP Amsterdam</p>
-                    </a>
+                    <a href="profiel.html" class="">Profiel</a>
                 </li>
                 <li>
-                    <a href="page-1.html" class="locatie-card">
-                        <h3>OBA Duivendrecht</h3>
-                        <p>Dorpsplein 60
-                            1115CX Amsterdam</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="page-1.html" class="locatie-card">
-                        <h3>OBA Waterlandplein</h3>
-                        <p>Waterlandplein 302
-                            1024NB Amsterdam</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="page-1.html" class="locatie-card">
-                        <h3>OBA Mercatorplein</h3>
-                        <p>Mercatorplein 89
-                            1057CA Amsterdam</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="page-1.html" class="locatie-card">
-                        <h3>OBA Osdorp</h3>
-                        <p>Osdorpplein 16
-                            1068EL Amsterdam</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="page-1.html" class="locatie-card">
-                        <h3>OBA Slotermeer</h3>
-                        <p>Slotermeerlaan 103 E
-                            1063JN Amsterdam</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="page-1.html" class="locatie-card">
-                        <h3>OBA Bijlmerplein</h3>
-                        <p>Bijlmerplein 393
-                            1102D Amsterdam</p>
-                    </a>
+                    <a href="instellingen.html" class="">Instellingen</a>
                 </li>
             </ul>
         </div>
-        <div class="locatie-map">
-            <div style="width: 100%;"><iframe width="100%" height="633" frameborder="0" scrolling="no" marginheight="0"
-                    marginwidth="0"
-                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Malet%20St,%20London%20WC1E%207HU,%20United%20Kingdom+(Your%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
-                        href="https://www.gps.ie/sport-gps/">hiking gps</a></iframe></div>
-        </div>
     </div>
+
+    <section class="filter">
+        <div id="filters" class="button-group">
+            <button class="btn-filter" data-filter="*">Gereserveerd</button>
+            <button class="btn-filter" data-filter=".low">Verlopen</button>
+            <button class="btn-filter" data-filter=".new">Terug gebracht</button>
+        </div>
+    </section>
+
+    <section class="blokken">
+        <div class="block_producten">
+            <div class="row posts block_items">
+                <div id="1" class="block_item item new col-md-4 poep">
+                    <a href="single-product.php">
+                        <img class="block_img" src="assets/images/boek-1.webp" alt="">
+                        <div class="block_excerpt">
+                            <p>Proin vel ligula</p>
+                            <a href="#" class="btn-act">Info</a>
+                            <a href="activiteiten.html" class="btn-act">Activiteiten<span class="icon-aantal">1</span></a>
+                        </div>
+                    </a>
+                </div>
+                <div id="1" class="block_item item low col-md-4 poep">
+                    <a href="single-product.php">
+                        <img class="block_img" src="assets/images/boek-2.webp" alt="">
+                        <div class="block_excerpt">
+                            <p>Proin vel ligula</p>
+                            <a href="#" class="btn-act">Info</a>
+                            <a href="#" class="btn-act">Activiteiten</a>
+                        </div>
+                    </a>
+                </div>
+                <div id="1" class="block_item item new col-md-4 poep">
+                    <a href="single-product.php">
+                        <img class="block_img" src="assets/images/boek-3.webp" alt="">
+                        <div class="block_excerpt">
+                            <p>Proin vel ligula</p>
+                            <a href="#" class="btn-act">Info</a>
+                            <a href="activiteiten.html" class="btn-act">Activiteiten<span class="icon-aantal">3</span></a>
+                        </div>
+                    </a>
+                </div>
+                <div id="1" class="block_item item new col-md-4">
+                    <a href="single-product.php">
+                        <img class="block_img" src="assets/images/boek-4.webp" alt="">
+                        <div class="block_excerpt">
+                            <p>Proin vel ligula</p>
+                            <a href="#" class="btn-act">Info</a>
+                            <a href="#" class="btn-act">Activiteiten</a>
+                        </div>
+                    </a>
+                </div>
+                <div id="1" class="block_item item low new col-md-4">
+                    <a href="single-product.php">
+                        <img class="block_img" src="assets/images/boek-5.jpg" alt="">
+                        <div class="block_excerpt">
+                            <p>Proin vel ligula</p>
+                            <a href="#" class="btn-act">Info</a>
+                            <a href="activiteiten.html" class="btn-act">Activiteiten<span class="icon-aantal">2</span></a>
+                        </div>
+                    </a>
+                </div>
+                <div id="1" class="block_item item low col-md-4">
+                    <a href="single-product.php">
+                        <img class="block_img" src="assets/images/boek-6.jpg" alt="">
+                        <div class="block_excerpt">
+                            <p>Proin vel ligula</p>
+                            <a href="#" class="btn-act">Info</a>
+                            <a href="activiteiten.html" class="btn-act">Activiteiten<span class="icon-aantal">1</span></a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 
 </html>
 
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+
+<!-- Additional Scripts -->
 <script type="text/javascript" src="scripts/index.js"></script>
+<script type="text/javascript" src="scripts/isotope.js"></script>
+<script type="text/javascript" src="scripts/owl.js"></script>

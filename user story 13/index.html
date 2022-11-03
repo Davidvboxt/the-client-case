@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link href="styles/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="titel">OBA</h1>
+        <div>
+            <a href="#" class="header-link">Help</a>
+            <span>|</span>
+            <a href="#" class="header-link">Log in</a>
+        </div>
+    </header>
+    <div class="sub-header">
+        <h4>Bibliotheken locatie's</h4>
+        <p>Voer je locatie (bijvoorbeeld: postcode, adres, stad...) in en we tonen de dichtsbijzijnde bibliotheken.</p>
+        <div class="header-bottom">
+            <div class="search">
+                <input class="input-text" type="text" id="javascript" name="fav_language" value="Zoeken...">
+                <input class="input-checkbox" type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label class="label" for="javascript">Momenteel open</label><br><br>
+                <input type="submit" value="Zoeken" class="btn-red">
+            </div>
+            <div class="tooltip">               
+                <i class="fa-solid fa-circle-info"></i>
+                <span class="tooltiptext">
+                    <ul>
+                        <li>
+                            <span class="color-blauw">Blauw</span> = VU
+                        </li>
+                        <li>
+                            <span class="color-rood">Rood</span> = HvA
+                        </li>
+                        <li> 
+                            <span class="color-paars">Paars</span> = UvA
+                        </li>
+                        <li>
+                            <span class="color-geel">Geel</span> = OBA
+                        </li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="locatie">
+        <div class="locatie-lijst">
+            <ul>
+                <li>
+                    <a href="page-1.html" class="locatie-card">
+                        <h3>OBA Oosterdok</h3>
+                        <p>Oosterdokskade 143
+                            1011DL Amsterdam</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-1.html" class="locatie-card">
+                        <h3>OBA Diemen</h3>
+                        <p>Wilhelminaplantsoen 126
+                            1111CP Amsterdam</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-1.html" class="locatie-card">
+                        <h3>OBA Duivendrecht</h3>
+                        <p>Dorpsplein 60
+                            1115CX Amsterdam</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-1.html" class="locatie-card">
+                        <h3>OBA Waterlandplein</h3>
+                        <p>Waterlandplein 302
+                            1024NB Amsterdam</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-1.html" class="locatie-card">
+                        <h3>OBA Mercatorplein</h3>
+                        <p>Mercatorplein 89
+                            1057CA Amsterdam</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-1.html" class="locatie-card">
+                        <h3>OBA Osdorp</h3>
+                        <p>Osdorpplein 16
+                            1068EL Amsterdam</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-1.html" class="locatie-card">
+                        <h3>OBA Slotermeer</h3>
+                        <p>Slotermeerlaan 103 E
+                            1063JN Amsterdam</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-1.html" class="locatie-card">
+                        <h3>OBA Bijlmerplein</h3>
+                        <p>Bijlmerplein 393
+                            1102D Amsterdam</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="locatie-map">
+            <div style="width: 100%;"><iframe width="100%" height="633" frameborder="0" scrolling="no" marginheight="0"
+                    marginwidth="0"
+                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Malet%20St,%20London%20WC1E%207HU,%20United%20Kingdom+(Your%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                        href="https://www.gps.ie/sport-gps/">hiking gps</a></iframe></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script type="text/javascript" src="scripts/index.js"></script>
